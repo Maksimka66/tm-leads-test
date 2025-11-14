@@ -1,0 +1,27 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.navList {
+    @include flex-column;
+
+    gap: 10vw;
+    align-items: flex-start;
+    text-transform: uppercase;
+}
+
+.navLink {
+    @include main-font;
+
+    color: $main-text-color;
+    
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+@media (min-width: 1440px) {
+    .navLink {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.aboutSection {
+    background-color:#ffffff; 
+}
+
+.aboutTitle {
+    @include title-mobile;
+
+    color: #030718;
+}
+
+.aboutContent {
+    @include text-content;
+
+    font-size: 16px;
+    text-transform: none;
+    color: #030718;
+    opacity: 80%;
+    text-align: left;
+}
+
+.aboutForm {
+    @include flex-column;
+
+    align-items: center;
+    justify-content: center;
+    background-color: #6A54FF;
+}
+
+.aboutLabel {
+    font-family: $main-font;
+    color: $main-text-color;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}

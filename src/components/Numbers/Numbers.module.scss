@@ -1,0 +1,56 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+
+.numbersSection {
+    background-color: #ffffff;
+    padding-top: 24px;
+    
+}
+
+.numbersLayout {
+    margin-bottom: 40px
+}
+
+.numbersTitle {
+    @include title-mobile;
+    
+    color: #000000;
+    margin-bottom: 2px;
+    text-align: left
+}
+
+.date {
+    @include text-content;
+
+    text-transform: none;
+    opacity: 50%;
+    text-align: left
+}
+
+.numbersList {
+    @include flex-between;
+
+    flex-wrap: wrap
+}
+
+.listItem {
+    @include flex-column;
+
+    gap: 1.2vw;
+}
+
+.listInfo {
+    @include text-content;
+
+    opacity: 80%;
+}
+
+.listNumber {
+   @include placeholder-mobile;
+
+    font-size: 36px;
+    line-height: 110%;
+    color: #6A54FF;
+    text-align: left;
+}

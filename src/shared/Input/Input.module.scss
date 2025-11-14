@@ -1,0 +1,12 @@
+@import '../../styles/mixins';
+
+.field {
+    background-color: #4A3BB3;
+    border: none;
+    border-radius: 3px;
+    padding: 20px 16px;
+}
+
+.field::placeholder {
+    @include placeholder-mobile;
+}

@@ -1,0 +1,41 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.mainTitle {
+    @include title-mobile;  
+    
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.textContent {
+    @include text-content;
+
+    font-size:16px;
+    color: #E7F7F8;
+    text-transform: none;
+    text-align: left;
+    margin-bottom: 24px;
+    width: 100%;
+    display: inline-block;
+    opacity: 80%;
+}
+
+.fieldLayout {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.heroBtn {
+    position: absolute;
+}
+
+.freeUsingText {
+    @include text-content;
+
+    color: $main-text-color;
+
+    text-transform: none;
+    text-align: left;
+    opacity: 20%;
+}

@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.authLayout {
+   @include flex-center;
+
+   justify-content: space-between;
+   flex-direction: row-reverse;
+   width: 100%;
+}

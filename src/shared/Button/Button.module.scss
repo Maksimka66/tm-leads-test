@@ -1,0 +1,6 @@
+@import '../../styles/mixins';
+
+.customButton {
+    @include button-custom
+}
+
