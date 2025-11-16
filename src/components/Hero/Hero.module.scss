@@ -1,11 +1,35 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
 
+
+.heroSection {
+    padding: 40px 16px;
+
+    @media (min-width: 1440px) {
+        padding: 160px 80px;
+    }
+}
+
+.heroLayout {
+    @media (min-width: 1440px) {
+        width: 32%;
+    }
+}
+
 .mainTitle {
     @include title-mobile;  
     
+    font-size: 35px;
+    line-height: 44px;
     margin-bottom: 12px;
     text-align: left;
+
+    @media (min-width: 1440px) {
+            .mainTitle {
+                font-size: 60px;
+                line-height: 72px;
+            }
+        }
 }
 
 .textContent {
@@ -21,13 +45,30 @@
     opacity: 80%;
 }
 
-.fieldLayout {
-    position: relative;
-    margin-bottom: 12px;
+.beginYourDealText {
+    @include text-content;
+
+    font-size: 16px;
+    text-transform: none;
+    opacity: 80%;
+    color: #E7F7F8;
+    margin-bottom: 24px;
 }
 
-.heroBtn {
+.heroForm {
+    position: relative;
+    margin-bottom: 12px
+}
+
+.heroForm button {
     position: absolute;
+    right: 1%;
+    top: 0;
+    bottom: 0;
+
+    @media (min-width: 1440px) {
+        font-size: 16px;
+    }
 }
 
 .freeUsingText {
@@ -37,5 +78,5 @@
 
     text-transform: none;
     text-align: left;
-    opacity: 20%;
+    opacity: 30%;
 }

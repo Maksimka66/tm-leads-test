@@ -4,18 +4,64 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 999;
+    z-index: 1001;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: stretch;
     background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modalOverlay.closing {
+    animation: fadeOut 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .modalWindow {
     box-shadow: 0 2px 3px 0 rgba(9, 30, 63, 0.1);
     background-color: #fff;
     overflow-y: auto;
-    transition: all 0.5s ease;
+    transition: transform 0.3s ease;
     height: 100%;
     width: 100%;
+    animation: slideInRight 0.3s ease;
+}
+
+.modalWindow.slideOut {
+    animation: slideOutRight 0.3s ease;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }

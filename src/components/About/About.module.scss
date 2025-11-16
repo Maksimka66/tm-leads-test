@@ -2,39 +2,57 @@
 @import '../../styles/variables';
 
 .aboutSection {
-    background-color:#ffffff; 
+    background-color: $main-text-color;
+
+    padding: 24px 16px;
+    position: relative;
+    padding-bottom: 133px;
+
+    @media(min-width: 1440px) {
+        display: flex;
+        justify-content: space-between;
+        position: static;
+        padding: 56px 80px;
+    }
+}
+
+.aboutWrapper {
+    @media(min-width: 1440px) {
+        width: 34%;
+    }
+}
+
+.aboutForm {
+    @media(min-width: 1440px) {
+        width: 48%;
+    }
 }
 
 .aboutTitle {
     @include title-mobile;
 
     color: #030718;
+    margin-bottom: 20px;
+
+    @media(min-width: 1440px) {
+        @include title-desktop;
+
+        color: #000000;
+        margin-bottom: 40px;
+    }
 }
 
 .aboutContent {
     @include text-content;
 
-    font-size: 16px;
     text-transform: none;
-    color: #030718;
     opacity: 80%;
-    text-align: left;
+
+    @media(min-width: 1440px) {
+        font-size: 16px; 
+    }
 }
 
-.aboutForm {
-    @include flex-column;
-
-    align-items: center;
-    justify-content: center;
-    background-color: #6A54FF;
-}
-
-.aboutLabel {
-    font-family: $main-font;
-    color: $main-text-color;
-
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
+.aboutContent:nth-child(2) {
+    margin-bottom: 16px;
 }

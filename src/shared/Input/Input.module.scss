@@ -4,7 +4,13 @@
     background-color: #4A3BB3;
     border: none;
     border-radius: 3px;
-    padding: 20px 16px;
+    padding: 16px;
+    width: 100%;
+    display: block;
+
+    @media (min-width: 1440px) {
+        padding: 20px 16px;
+    }
 }
 
 .field::placeholder {

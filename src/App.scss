@@ -3,8 +3,25 @@
 #root {
     background-color: $main-background-color;
 
-    padding: 2rem;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
+}
+
+.pageContent {
+    padding-top: 96px;
+
+    section {
+        scroll-margin-top: 44px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .pageContent {
+        padding-top: 0;
+
+        section {
+            scroll-margin-top: 0;
+        }
+    }
 }
 

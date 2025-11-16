@@ -1,0 +1,98 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.faqSection {
+    background-color: #ffffff;
+    padding: 54px 16px;
+
+    @media (min-width: 1440px) {
+        padding: 96px 0;
+    }  
+}
+
+.faqTitle {
+    @include title-mobile;
+    
+    color: #030718;
+    margin-bottom: 40px;
+
+    @media (min-width: 1440px) {
+        color: #000000;
+        font-size: 44px;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 56px;
+        margin-bottom: 64px;
+    }
+}
+
+.faqBtn {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.iconOpen {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease, stroke 0.3s ease;
+    stroke: #ffffff;
+}
+
+.faqBtn svg {
+    transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.listItem {
+    background-color: #EAEFF0;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.textOpened {
+    background-color: #6A54FF;
+}
+
+.layoutItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemTitle {
+    font-family: $main-font;
+
+    color: #030718;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+
+    @media (min-width: 1440px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+.faqTextLayout {
+    margin-top: 12px
+}
+
+.faqText {
+    @include text-content;
+
+    color: #030718;
+    font-size: 16px;
+    text-transform: none;
+    opacity: 80%;
+}
+
+.faqList {
+    @media (min-width: 1440px) {
+        margin: 0 auto;
+        width: 50%;
+    }
+}

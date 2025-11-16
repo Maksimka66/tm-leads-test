@@ -1,6 +1,39 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
 
+.header {
+    background-color: $main-background-color;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 0 16px;
+
+    @media (min-width: 1440px) {
+        position: static;
+        padding: 16px 80px;
+    }
+}
+
 .layout {
     @include flex-between;
+}
+
+.layout nav {
+    gap: 8%;
+}
+
+
+.layout button {
+    @media (min-width: 1440px) {
+        padding: 12px 24px;
+    }
+}
+
+.burgerBtn {
+    width: 32px;
+    height: 32px;
 }

@@ -1,0 +1,236 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.tarrifsSection {
+    padding: 44px 16px;
+
+    @media (min-width: 1440px) {
+        padding: 96px 0;
+    }
+}
+
+.tarrifsLayout {
+    @media (min-width: 1440px) {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.tarrifsSection nav {
+    padding: 4px;
+    background-color: rgba(106, 84, 255, 1);
+    border-radius: 4px;
+    margin-bottom: 24px;
+
+    @media (min-width: 1440px) {
+        padding: 4px 0;
+        margin-bottom: 44px;
+        justify-content: center;
+        width: 48%;
+    }
+}
+
+.tarrifsSection button {
+    border: none;
+    width: 48%;
+} 
+
+.tariffsTitle {
+    @include title-mobile;
+
+    margin-bottom: 24px;
+
+    @media(min-width: 1440px) {
+        @include title-desktop;
+
+        margin-bottom: 40px;
+    }
+}
+
+.tarrifsNav {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    justify-content: space-between;
+    background-color: #6A54FF;
+    border-radius: 4px;
+    opacity: 40%;
+
+    @media(min-width: 1440px) {
+        margin-bottom: 44px;
+        width: 50%;
+        justify-content: flex-start;
+    }
+}
+
+.tarrifsNavBtn {
+    font-family: $main-font;
+
+    padding: 14px 46px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #57E1FF;
+    text-align: center;
+}
+
+.sectionList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @media (min-width: 1440px) {
+        flex-direction: row;
+        gap: 4%;
+        width: 50%;
+    }
+}
+
+.sectionListItem {
+    padding: 16px;
+    border-radius: 8px;
+
+    @media (min-width:1440px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sectionListItem:first-child {
+    border: 1px solid #6A54FF;
+    margin-bottom: 20px;
+
+    @media (min-width:1440px) {
+        margin-bottom: 0;
+    }
+
+}
+
+.sectionListItem:last-child {
+    background-color: #6A54FF;
+}
+
+.sectionListItem button {
+    width: 100%;
+}
+
+.listTitle {
+    font-family: $main-font;
+    color: $main-text-color;
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+    @media (min-width:1440px) {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 56px;
+    }
+}
+
+.contentLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.contentList {
+    margin-bottom: 40px;
+}
+
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 4%;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 1);
+}
+
+.services {
+    @include text-content;
+
+    color: $main-text-color;
+
+    font-size: 16px;
+    text-transform: none;
+    text-align: left;
+
+    @media (min-width: 1440px) {
+
+    }
+}
+
+.numbersLayout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbersLayout button {
+    width: auto;
+}
+
+.priceLayout {
+    display: flex;
+    gap: 6%;
+}
+
+.price {
+    font-family: $main-font;
+    color: $main-text-color;
+
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.discount {
+    font-family: $main-font;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #35FF9E;
+}
+
+.date {
+    @include text-content;
+
+    color: $main-text-color;
+
+    padding: 8px 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    border-radius: 4px;
+    text-transform: none;
+}
+
+.tryFreeBtn {
+    @include button-custom;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    font-size: 16px;
+}
+
+.freeDays {
+    font-family: $main-font;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    opacity: 56%;
+    text-transform: none;
+}

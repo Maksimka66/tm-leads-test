@@ -1,0 +1,59 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.form {
+    @include flex-column;
+
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #6A54FF;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+
+    @media (min-width: 1440px) {
+        padding: 32px 44px;
+        position: static;
+    }
+}
+
+.formLabel {
+    font-family: $main-font;
+    color: $main-text-color;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (min-width: 1440px) {
+        margin-bottom: 32px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.fieldWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media (min-width: 1440px) {
+        position: relative;
+    }
+}
+
+.fieldWrapper button {
+    @media (min-width: 1440px) {
+        position: absolute;
+        width: 30%;
+        text-align: center;
+        font-size: 16px;
+        bottom: 0;
+        right: 1%;
+        top: 0;
+    }
+}

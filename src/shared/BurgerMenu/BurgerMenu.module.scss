@@ -5,14 +5,37 @@
 
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #6A54FF;
+    background-color: #6a54ff;
     height: 100%;
     position: relative;
-    padding: 16px;
+    padding: 48px 24px 24px;
+    gap: 32px;
+}
+
+.navLayout {
+    width: 100%;
+}
+
+.navLayout button {
+    width: 48%;
+}
+
+.menuContent {
+    width: 100%;
+}
+
+.menuContent ul {
+    gap: 10vw;
+    margin-top: 32px;
+}
+
+.menuContent a {
+    font-size: 24px;
+    line-height: 44px;
 }
 
 .closeButton {
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 16px;
+    right: 16px;
 }

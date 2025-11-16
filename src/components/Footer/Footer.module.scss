@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerItem {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20%;
+    position: relative;
+    padding: 40px 4vh;
+}
+
+.footerItem::before {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    color: #ffffff;
+    opacity: 30%;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.quickNav {
+    @include text-content;
+
+    color: #ffffff;
+    opacity: 40%;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.rightsLayout {
+    @include flex-column;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 4vh;
+}
+
+.rights {
+    @include text-content;
+    
+    color: $main-text-color;
+
+    text-transform: none;
+    opacity: 50%;
+    text-align: left;
+}
+
+@media (min-width: 1440px) {
+    .footer {
+        padding: 44px 80px;
+    }
+
+
+    .footerItem {
+       gap: 24vh;
+       flex-direction: column;
+       padding: 0;
+   }   
+
+   .footerItem::before {
+        width: 1px;
+        height: 100vh;
+        right: -70%;
+   }
+
+   .rightsLayout {
+    padding: 0;
+   }
+}

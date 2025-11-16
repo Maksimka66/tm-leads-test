@@ -1,6 +1,15 @@
+import { forwardRef, type InputHTMLAttributes } from 'react';
+
 import styles from './Input.module.scss';
 
-export default function Input({ placeholder, id }) {
-    return <input placeholder={placeholder} id={id} className={styles.field} />;
-}
+type InputProps = InputHTMLAttributes<HTMLInputElement>;
+
+const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
+    { className = '', ...rest },
+    ref
+) {
+    return <input {...rest} className={`${styles.field} ${className}`.trim()} ref={ref} />;
+});
+
+export default Input;
 

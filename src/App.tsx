@@ -8,10 +8,13 @@ import Footer from './components/Footer/Footer';
 import './App.scss';
 import Modal from './shared/Modal/Modal';
 import BurgerMenu from './shared/BurgerMenu/BurgerMenu';
+import FAQ from './components/FAQ/FAQ';
+import Tariffs from './components/Tariffs/Tariffs';
 
 function App() {
-    const [width, setWidth] = useState<null | number>(null);
+    const [width, setWidth] = useState<number>(0);
     const [modalWindow, setModalWindow] = useState(false);
+    const [isClosing, setIsClosing] = useState(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -28,18 +31,30 @@ function App() {
     }, []);
 
     const switchModal = () => {
-        setModalWindow(!modalWindow);
+        if (modalWindow) {
+            setIsClosing(true);
+            setTimeout(() => {
+                setModalWindow(false);
+                setIsClosing(false);
+            }, 300);
+        } else {
+            setModalWindow(true);
+        }
     };
 
     return (
         <>
             <Header width={width} handler={switchModal} />
-            <Hero />
-            <Numbers />
-            <About />
-            <Footer />
+            <main className='pageContent'>
+                <Hero />
+                <Numbers />
+                <About />
+                <Tariffs />
+                <FAQ />
+                {/* <Footer /> */}
+            </main>
             {modalWindow && (
-                <Modal>
+                <Modal isClosing={isClosing}>
                     <BurgerMenu handler={switchModal} />
                 </Modal>
             )}

@@ -1,8 +1,8 @@
 import styles from './Button.module.scss';
 
-export default function Button({ children, type, className }) {
+export default function Button({ children, type }) {
     return (
-        <button className={`${styles.customButton} ${className}`} type={type}>
+        <button className={`${styles.customButton}`} type={type}>
             {children}
         </button>
     );

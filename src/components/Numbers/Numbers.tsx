@@ -2,7 +2,7 @@ import styles from './Numbers.module.scss';
 
 export default function Numbers() {
     return (
-        <section className={styles.numbersSection}>
+        <section id='numbers' className={styles.numbersSection}>
             <div className={styles.numbersLayout}>
                 <h2 className={styles.numbersTitle}>Цифры</h2>
                 <p className={styles.date}>Cентябрь 2022</p>

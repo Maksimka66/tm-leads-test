@@ -20,8 +20,6 @@
 
 @mixin main-font {
     font-family: $main-font;
-
-    letter-spacing: 0%;
 }
 
 @mixin title-mobile {
@@ -32,7 +30,6 @@
     font-size: 28px;
     line-height: 36px;
     text-transform: uppercase;
-    letter-spacing: -4%;
     text-align: left
     
 }
@@ -52,17 +49,18 @@
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
-    color: #000000;
+    color: #030718;
 }
 
 @mixin placeholder-mobile {
     font-family: $main-font;
+    color: $main-text-color;
 
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: -1%;
     text-transform: uppercase;
+    opacity: 34%;
 }
 
 @mixin placeholder-desktop {

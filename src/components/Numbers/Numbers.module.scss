@@ -3,13 +3,24 @@
 
 
 .numbersSection {
-    background-color: #ffffff;
-    padding-top: 24px;
-    
+    background-color: $second-background-color;
+
+    padding: 48px 0; 
+    padding: 4vw;
+
+    @media (min-width: 1440px) {
+        display: flex;
+        gap: 25%;
+        justify-content: space-between;
+    }
 }
 
 .numbersLayout {
-    margin-bottom: 40px
+    margin-bottom: 40px;
+
+    @media (min-width: 1440px) {
+        margin-bottom: 0;
+    }
 }
 
 .numbersTitle {
@@ -17,7 +28,13 @@
     
     color: #000000;
     margin-bottom: 2px;
-    text-align: left
+    text-align: left;
+
+    @media (min-width: 1440px) {
+        font-size: 44px;
+        line-height: 56px;
+        margin-bottom: 4px;
+    }
 }
 
 .date {
@@ -29,21 +46,31 @@
 }
 
 .numbersList {
-    @include flex-between;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: clamp(20px, 4vw, 60px);
 
-    flex-wrap: wrap
+    @media (min-width: 1440px) {
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+    }
+    
 }
 
 .listItem {
     @include flex-column;
-
-    gap: 1.2vw;
+    gap: 2%
 }
 
 .listInfo {
     @include text-content;
 
     opacity: 80%;
+    text-align: left;
+    overflow-wrap: break-word;
+    color: #000000; 
+
 }
 
 .listNumber {
@@ -53,4 +80,9 @@
     line-height: 110%;
     color: #6A54FF;
     text-align: left;
+    opacity: 1;
+
+    @media (min-width: 1440px) {
+        font-size: 60px;
+    }
 }

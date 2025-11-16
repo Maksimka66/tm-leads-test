@@ -5,19 +5,19 @@ import styles from './Hero.module.scss';
 
 export default function Hero() {
     return (
-        <section>
-            <h1 className={styles.mainTitle}>Моментально копируй сделки профи трейдеров</h1>
-            <label className={styles.textContent} htmlFor='hero'>
-                Начни копировать сделки с успешной командой профессиональных трейдеров в
-                автоматическом режиме.
-            </label>
-            <div className={styles.fieldLayout}>
-                <Input id='hero' placeholder='Ваш e-mail' />
-                <Button className='heroBtn' type='button'>
-                    Начать
-                </Button>
+        <section className={styles.heroSection} id='hero'>
+            <div className={styles.heroLayout}>
+                <h1 className={styles.mainTitle}>Моментально копируй сделки профи трейдеров</h1>
+                <p className={styles.beginYourDealText}>
+                    Начни копировать сделки с успешной командой профессиональных трейдеров в
+                    автоматическом режиме.
+                </p>
+                <form className={styles.heroForm}>
+                    <Input placeholder='Ваш e–mail' />
+                    <Button type='submit'>Начать</Button>
+                </form>
+                <p className={styles.freeUsingText}>5 дней бесплатного пользования</p>
             </div>
-            <p className={styles.freeUsingText}>5 дней бесплатного пользования</p>
         </section>
     );
 }
