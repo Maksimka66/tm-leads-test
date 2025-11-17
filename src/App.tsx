@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react';
+
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Numbers from './components/Numbers/Numbers';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
-
-import './App.scss';
 import Modal from './shared/Modal/Modal';
 import BurgerMenu from './shared/BurgerMenu/BurgerMenu';
-import FAQ from './components/FAQ/FAQ';
+import FAQ from './components/Questions/Questions';
 import Tariffs from './components/Tariffs/Tariffs';
 import Deals from './components/Deals/Deals';
+
+import './App.scss';
 
 function App() {
     const [width, setWidth] = useState<number>(0);

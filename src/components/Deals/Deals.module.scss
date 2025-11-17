@@ -45,3 +45,88 @@
     color: #35FF9E;
     text-transform: none;
 }
+
+.dealsList {
+    display: flex;
+    gap: 1vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.dealsListItem {
+    background-color: #6A54FF;
+    border-radius: 4px;
+    padding: 16px;
+    position: relative;
+    min-width: 294px;
+}
+
+.coinsLayout {
+    margin-bottom: 48px;
+}
+
+.coins {
+    font-family: $main-font;
+    color: $main-text-color;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 2px;
+}
+
+.minute {
+    @include placeholder-mobile;
+
+    text-transform: none;
+    line-height: 18px;
+    opacity: 40%;
+}
+
+.profitLayout {
+    margin-bottom: 8px
+}
+
+.profit {
+    @include placeholder-mobile;
+
+    line-height: 18px;
+    opacity: 70%;
+}
+
+.procent {
+    @include title-mobile;
+
+    font-weight: 500;
+    color: #35FF9E;
+}
+
+.targetLayout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.target {
+    @include placeholder-mobile;
+    
+    text-transform: none;
+    line-height: 18px;
+    opacity: 70%;
+}
+
+.date {
+    @include placeholder-mobile;
+
+    font-weight: 400;
+    line-height: 18px;
+    opacity: 40%;
+    text-transform: none;
+    text-align: right;
+}
+
+.iconWrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+}

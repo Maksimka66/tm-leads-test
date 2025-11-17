@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import DropOpenIcon from '../../icons/DropOpenIcon/DropOpenIcon';
 
-import styles from './FAQ.module.scss';
+import styles from './Questions.module.scss';
 
-export default function FAQ() {
+export default function Questions() {
     const [id, setId] = useState('');
 
     const handleClick = (e: React.MouseEvent<HTMLElement>) => {

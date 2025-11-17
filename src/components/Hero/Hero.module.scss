@@ -7,6 +7,85 @@
 
     @media (min-width: 1440px) {
         padding: 160px 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+}
+
+.ethList {
+    margin-bottom: 34px;
+    
+    @media (min-width: 1440px) {
+        width: 50%;
+        margin-bottom: 0;
+    }
+}
+
+.ethListItem {
+    width: 50%;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 1440px) {
+        padding: 12px 10px;
+        width: 50%;
+    }
+}
+
+.ethListItem:first-child {
+    border: 1px dashed rgba(106, 84, 255, 0.7);
+    margin-bottom: 8vh;
+
+    p, span {
+        color: #6A54FF;
+        opacity: 70%;
+    }
+}
+
+.ethListItem:last-child {
+    background-color: #6A54FF;
+
+    p {
+        color: $main-text-color
+    }
+
+    span {
+        color: $main-text-color;
+
+        opacity: 60%;
+    }
+}
+
+.ethText {
+    font-family: $main-font;
+
+    opacity: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+
+    @media (min-width: 1440px) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+}
+
+.strategy {
+    font-family: $main-font;
+
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    @media (min-width: 1440px) {
+        font-size: 16px;
+        line-height: 28px;
     }
 }
 

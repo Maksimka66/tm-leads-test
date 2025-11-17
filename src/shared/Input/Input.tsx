@@ -8,7 +8,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
     { className = '', ...rest },
     ref
 ) {
-    return <input {...rest} className={`${styles.field} ${className}`.trim()} ref={ref} />;
+    return <input {...rest} className={`${styles.field} ${className}`.trim()} ref={ref} required />;
 });
 
 export default Input;
