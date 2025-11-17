@@ -9,12 +9,9 @@
     border-radius: 4px;
     background-color: #6A54FF;
     padding: 16px;
-    position: absolute;
-    top: 50%;
 
     @media (min-width: 1440px) {
         padding: 32px 44px;
-        position: static;
     }
 }
 

@@ -65,6 +65,11 @@
     padding: 16px;
     position: relative;
     min-width: 294px;
+    clip-path: polygon(0 0,
+                calc(100% - 34px) 0,
+                100% 34px,
+                100% 100%,
+                0 100%);
 }
 
 .coinsLayout {

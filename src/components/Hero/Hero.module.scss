@@ -15,7 +15,19 @@
 
 .ethList {
     margin-bottom: 34px;
+    position: relative;
+    display: flex;
+    justify-content: center;
     
+    &:hover .ethListItem:nth-child(1) {
+            transform: translate(-50%, -50%) scale(0.95);
+            opacity: 0.5;
+        }
+    
+    &:hover .ethListItem:nth-child(2) {
+            transform: translate(10px, 10px);
+    }
+
     @media (min-width: 1440px) {
         width: 50%;
         margin-bottom: 0;
@@ -29,6 +41,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    width: fit-content;
+    position: absolute;
+    
+    transition: transform 0.4s ease, opacity 0.4s ease;
 
     @media (min-width: 1440px) {
         padding: 12px 10px;

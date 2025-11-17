@@ -5,18 +5,17 @@
     background-color: $main-text-color;
 
     padding: 24px 16px;
-    position: relative;
-    padding-bottom: 133px;
-
+    
     @media(min-width: 1440px) {
         display: flex;
         justify-content: space-between;
-        position: static;
         padding: 56px 80px;
     }
 }
 
 .aboutWrapper {
+    margin-bottom: 40px;
+
     @media(min-width: 1440px) {
         width: 34%;
     }
