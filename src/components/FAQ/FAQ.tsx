@@ -20,7 +20,7 @@ export default function FAQ() {
         <section className={styles.faqSection} id='faq'>
             <h2 className={styles.faqTitle}>часто задаваемые вопросы</h2>
             <ul className={styles.faqList} onClick={handleClick}>
-                <li className={styles.listItem}>
+                <li className={`${styles.listItem} ${id === '1' ? styles.textOpened : ''}`}>
                     <div className={styles.layoutItem}>
                         <h3 className={styles.itemTitle}>Что такое TradeBlade</h3>
                         <button className={styles.faqBtn} id='1'>
@@ -41,7 +41,7 @@ export default function FAQ() {
                         </div>
                     )}
                 </li>
-                <li className={styles.listItem}>
+                <li className={`${styles.listItem} ${id === '2' ? styles.textOpened : ''}`}>
                     <div className={styles.layoutItem}>
                         <h3 className={styles.itemTitle}>Что TradeBlade предлагает инвесторам</h3>
                         <button className={styles.faqBtn} id='2'>
@@ -55,7 +55,7 @@ export default function FAQ() {
                         </div>
                     )}
                 </li>
-                <li className={styles.listItem}>
+                <li className={`${styles.listItem} ${id === '3' ? styles.textOpened : ''}`}>
                     <div className={styles.layoutItem}>
                         <h3 className={styles.itemTitle}>
                             Должен ли я перевести свои средства на TradeBlade

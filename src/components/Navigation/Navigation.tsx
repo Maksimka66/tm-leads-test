@@ -31,8 +31,8 @@ export default function Navigation({ onLinkClick }: NavigationProps) {
                 <li className={styles.listItem}>
                     <a
                         className={styles.navLink}
-                        href='#hero'
-                        onClick={(e) => handleLinkClick(e, '#hero')}
+                        href='#deals'
+                        onClick={(e) => handleLinkClick(e, '#deals')}
                     >
                         Сделки онлайн
                     </a>

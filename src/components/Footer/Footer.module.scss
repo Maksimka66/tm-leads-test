@@ -2,76 +2,65 @@
 @import '../../styles/mixins';
 
 .footer {
-    display: flex;
-    justify-content: space-between;
+    padding: 40px 0;
+
+    @media (min-width: 1440px) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 80px;
+    }
 }
 
 .footerItem {
+    padding-left: 8vw;
+    padding-right: 12vw;
+    padding-bottom: 12vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
-    justify-content: flex-start;
-    gap: 20%;
-    position: relative;
-    padding: 40px 4vh;
-}
+    justify-content: space-between;
 
-.footerItem::before {
-    content: '';
-    position: absolute;
-    bottom: -10%;
-    right: 0;
-    color: #ffffff;
-    opacity: 30%;
-    width: 100vw;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.3);
+    @media (min-width: 1440px) {
+        border-bottom: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 40px 0;
+        padding-bottom: 45px;
+        flex-direction: column;
+        width: 70%;
+    }
 }
 
 .quickNav {
     @include text-content;
 
-    color: #ffffff;
+    color: $main-text-color;
+
     opacity: 40%;
-    text-align: left;
-    overflow-wrap: break-word;
+    width: 40%;
+
+    @media (min-width: 1440px) {
+        width: 100%;
+    }
 }
 
 .rightsLayout {
-    @include flex-column;
+    padding: 24px 16px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24vh;
 
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 40px 4vh;
+    @media (min-width: 1440px) {
+        align-items: flex-end;
+        padding-top: 28px;
+        padding-bottom: 45px;
+    }
 }
 
 .rights {
     @include text-content;
     
     color: $main-text-color;
-
-    text-transform: none;
+    
     opacity: 50%;
-    text-align: left;
-}
-
-@media (min-width: 1440px) {
-    .footer {
-        padding: 44px 80px;
-    }
-
-
-    .footerItem {
-       gap: 24vh;
-       flex-direction: column;
-       padding: 0;
-   }   
-
-   .footerItem::before {
-        width: 1px;
-        height: 100vh;
-        right: -70%;
-   }
-
-   .rightsLayout {
-    padding: 0;
-   }
+    text-transform: none;
 }

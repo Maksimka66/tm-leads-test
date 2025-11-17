@@ -35,12 +35,13 @@
 
 .iconOpen {
     transform: rotate(180deg);
-    transition: transform 0.3s ease, stroke 0.3s ease;
-    stroke: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ffffff;
 }
 
+
 .faqBtn svg {
-    transition: transform 0.3s ease, stroke 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .listItem {
@@ -54,6 +55,10 @@
 
 .textOpened {
     background-color: #6A54FF;
+}
+
+.textOpened h3 {
+    color: $main-text-color;
 }
 
 .layoutItem {
@@ -70,6 +75,7 @@
     font-size: 20px;
     line-height: 28px;
     text-align: left;
+    transition: color 0.3s ease;
 
     @media (min-width: 1440px) {
         font-size: 24px;
@@ -84,10 +90,12 @@
 .faqText {
     @include text-content;
 
-    color: #030718;
+    color: $main-text-color;
+
     font-size: 16px;
     text-transform: none;
     opacity: 80%;
+    transition: color 0.3s ease;
 }
 
 .faqList {

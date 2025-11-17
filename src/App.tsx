@@ -10,6 +10,7 @@ import Modal from './shared/Modal/Modal';
 import BurgerMenu from './shared/BurgerMenu/BurgerMenu';
 import FAQ from './components/FAQ/FAQ';
 import Tariffs from './components/Tariffs/Tariffs';
+import Deals from './components/Deals/Deals';
 
 function App() {
     const [width, setWidth] = useState<number>(0);
@@ -48,10 +49,11 @@ function App() {
             <main className='pageContent'>
                 <Hero />
                 <Numbers />
+                <Deals />
                 <About />
                 <Tariffs />
                 <FAQ />
-                {/* <Footer /> */}
+                <Footer />
             </main>
             {modalWindow && (
                 <Modal isClosing={isClosing}>

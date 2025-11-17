@@ -11,7 +11,7 @@ export default function Footer() {
                 <Navigation />
             </div>
             <div className={styles.rightsLayout}>
-                <AppLogoExtended width={164} height={86} />
+                <AppLogoExtended width={165} height={80} />
                 <p className={styles.rights}>© 2022 TradeBlade. All rights reserved</p>
             </div>
         </footer>

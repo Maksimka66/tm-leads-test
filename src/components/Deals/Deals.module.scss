@@ -1,0 +1,47 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.dealsSection {
+    padding: 46px 16px;
+
+    @media (min-width: 1440px) {
+        padding: 96px 80px;
+    }
+}
+
+.dealsLayout {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 24px;
+}
+
+.dealsLayout::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);  
+    width: 8px;
+    height: 8px;
+    background-color: #35FF9E;
+    border-radius: 50%;
+}
+
+.dealsTitle {
+    @include title-mobile;
+
+    margin-bottom: 2px;
+
+    @media (min-width: 1440px) {
+        @include title-desktop;
+
+        margin-bottom: 4px;
+    }
+}
+
+.online {
+    @include text-content;
+
+    color: #35FF9E;
+    text-transform: none;
+}

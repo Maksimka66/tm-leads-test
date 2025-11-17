@@ -1,5 +1,3 @@
-import styles from '../../components/FAQ/FAQ.module.scss';
-
 export default function DropOpenIcon({ id, className }) {
     return (
         <svg
@@ -13,7 +11,7 @@ export default function DropOpenIcon({ id, className }) {
         >
             <path
                 d='M6 14.5L12 8.5L18 14.5'
-                stroke='black'
+                stroke='currentColor'
                 stroke-width='1.4'
                 stroke-linecap='round'
                 stroke-linejoin='round'
