@@ -49,9 +49,7 @@ export default function EmailForm({ id, placeholder, buttonText, onSubmit }: Ema
                     {...register('email')}
                     className={styles.input}
                 />
-                <Button type='submit' className={styles.submitButton}>
-                    {buttonText}
-                </Button>
+                <Button type='submit'>{buttonText}</Button>
             </div>
         </form>
     );

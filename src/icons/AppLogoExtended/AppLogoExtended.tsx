@@ -1,8 +1,10 @@
-export default function AppLogoExtended({ width, height }) {
+import type { AppLogoExtendedProps } from '../../types/types';
+
+export default function AppLogoExtended({ width, height }: AppLogoExtendedProps) {
     return (
         <svg
-            width='132'
-            height='64'
+            width={width}
+            height={height}
             viewBox='0 0 132 64'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'

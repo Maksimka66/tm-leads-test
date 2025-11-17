@@ -1,4 +1,6 @@
-export default function DropOpenIcon({ id, className }) {
+import type { OpenIconProps } from '../../types/types';
+
+export default function DropOpenIcon({ id, className }: OpenIconProps) {
     return (
         <svg
             width='24'

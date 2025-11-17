@@ -6,13 +6,13 @@ import styles from './FAQ.module.scss';
 export default function FAQ() {
     const [id, setId] = useState('');
 
-    const handleClick = (e) => {
-        console.log(e.currentTarget.className);
+    const handleClick = (e: React.MouseEvent<HTMLElement>) => {
+        const target = e.target as HTMLElement;
 
-        if (id === e.target.id) {
+        if (id === target.id) {
             setId('');
         } else {
-            setId(e.target.id);
+            setId(target.id);
         }
     };
 
