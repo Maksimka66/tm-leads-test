@@ -10,7 +10,7 @@ export type AppLogoExtendedProps = {
 };
 
 export type OpenIconProps = {
-    id: string;
+    id?: string;
     className: string;
 };
 

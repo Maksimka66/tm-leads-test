@@ -213,6 +213,13 @@
     font-size: 16px;
     border-radius: 4px;
     text-transform: none;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.icon {
+    rotate: 180deg
 }
 
 .tryFreeBtn {

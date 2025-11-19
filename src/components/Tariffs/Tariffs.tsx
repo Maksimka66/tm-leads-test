@@ -1,4 +1,5 @@
 import CheckIcon from '../../icons/CheckIcon/CheckIcon';
+import DropOpenIcon from '../../icons/DropOpenIcon/DropOpenIcon';
 import SectionNav from '../../shared/SectionNav/SectionNav';
 
 import styles from './Tariffs.module.scss';
@@ -49,7 +50,9 @@ export default function Tariffs() {
                                 <p className={styles.price}>$234</p>
                                 <span className={styles.discount}>-35%</span>
                             </div>
-                            <button className={styles.date}>12 месяцев</button>
+                            <button className={styles.date}>
+                                12 месяцев <DropOpenIcon className={styles.icon} />
+                            </button>
                         </div>
                     </div>
                     <button className={styles.tryFreeBtn}>
@@ -106,7 +109,9 @@ export default function Tariffs() {
                                 <p className={styles.price}>$585</p>
                                 <span className={styles.discount}>-35%</span>
                             </div>
-                            <button className={styles.date}>12 месяцев</button>
+                            <button className={styles.date}>
+                                12 месяцев <DropOpenIcon className={styles.icon} />
+                            </button>
                         </div>
                     </div>
                     <button className={styles.tryFreeBtn}>
